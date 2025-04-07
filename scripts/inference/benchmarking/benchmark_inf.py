@@ -133,7 +133,7 @@ def main(config: DictConfig):
                                 eos_token_id=None,
                                 pad_token_id=None,
                             )
-               #log inference metrics using wandb
+              
                 
 
                 torch.cuda.synchronize()
@@ -148,6 +148,7 @@ def main(config: DictConfig):
                     f'{run_name}, {mean_time:.3f}, {tokens_per_second:.3f}, {ms_per_seq_output_token:.3f}',
                 )
 
+                #log inference metrics using wandb
                 wandb.log({
                     'batch_size': batch_size,
                     'input_length': input_length,
