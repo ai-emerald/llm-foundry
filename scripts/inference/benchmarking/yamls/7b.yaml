@@ -35,5 +35,5 @@ input_lengths: [128]
 output_lengths: [8]
 use_cache: true
 
-num_batches: 5
+num_batches: 50
 num_warmup_batches: 3
