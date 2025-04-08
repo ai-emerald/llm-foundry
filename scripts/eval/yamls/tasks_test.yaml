@@ -1,0 +1,15 @@
+icl_tasks:
+-
+  label: jeopardy
+  dataset_uri: eval/local_data/world_knowledge/jeopardy_all.jsonl
+  num_fewshot: [10]
+  icl_task_type: language_modeling
+  continuation_delimiter: "\nAnswer: "  # this separates questions from answers
+  has_categories: true
+-
+  label: mmlu
+  dataset_uri: eval/local_data/world_knowledge/mmlu.jsonl
+  num_fewshot: [10]
+  icl_task_type: multiple_choice
+  continuation_delimiter: "\nAnswer: "  # this separates questions from answers
+  has_categories: true
